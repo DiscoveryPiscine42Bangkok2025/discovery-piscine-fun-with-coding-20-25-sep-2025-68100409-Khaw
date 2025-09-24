@@ -15,12 +15,12 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       padding-top: 70px;
+      background-color: #f9f9f9;
     }
 
     nav {
       position: fixed;
       top: 0;
-      left: 0;
       width: 100%;
       background-color: #222;
       color: #fff;
@@ -34,7 +34,7 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 15px;
+      gap: 20px;
     }
 
     nav a {
@@ -44,33 +44,59 @@
 
     section {
       padding: 60px 20px;
-      text-align: center;
     }
 
     section:nth-child(even) {
-      background-color: #f0f0f0;
+      background-color: #ececec;
     }
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 15px;
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Profile Section */
+    #profile {
+      text-align: center;
+    }
+
+    /* Two-column layout for experience & skill */
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      text-align: left;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .skills span {
-      display: inline-block;
       background-color: #007bff;
       color: white;
-      padding: 6px 12px;
-      margin: 5px;
+      padding: 8px 14px;
       border-radius: 20px;
       font-size: 14px;
     }
 
     .btn-exit {
-      margin-top: 20px;
+      margin-top: 30px;
+      display: inline-block;
       padding: 10px 20px;
       background-color: #dc3545;
       color: white;
@@ -81,13 +107,25 @@
     .btn-exit:hover {
       background-color: #b52a3b;
     }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav>
-    <div>My Resume</div>
+    <div><strong>My Resume</strong></div>
     <ul>
       <li><a href="#profile">Profile</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -98,26 +136,31 @@
 
   <!-- Profile -->
   <section id="profile">
-    <img src="https://img2.imgbiz.com/imgbiz/IMG_6591.jpg" alt="Profile Picture" class="profile-pic">
     <h2>นางสาวพิชญาภัค ทองวิเศษ</h2>
     <p>นักศึกษา | ผู้ที่สนใจด้านวิทยาศาสตร์และนวัตกรรม</p>
   </section>
 
   <!-- Experience -->
   <section id="experience">
-    <h2>ประสบการณ์</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li>เข้าร่วมนำเสนอโครงงานวิทยาศาสตร์ สาขาเคมี</li>
-      <li>เข้าร่วมการแข่งขันแนวคิดนวัตกรรม Chang Innovation Awards</li>
-    </ul>
+    <h2 class="text-center">ประสบการณ์</h2>
+    <div class="two-column">
+      <div class="column">
+        <ul>
+          <li>เข้าร่วมนำเสนอโครงงานวิทยาศาสตร์ สาขาเคมี</li>
+          <li>เข้าร่วมการแข่งขันแนวคิดนวัตกรรม Chang Innovation Awards</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Skills -->
   <section id="skill">
-    <h2>ทักษะ (Skills)</h2>
-    <div class="skills">
-      <span>เล่นกลอง (Play the Drums)</span>
-      <span>การทำงานเป็นทีม (Collaboration)</span>
+    <h2 class="text-center">ทักษะ (Skills)</h2>
+    <div class="two-column">
+      <div class="column skills">
+        <span>เล่นกลอง (Play the Drums)</span>
+        <span>การทำงานเป็นทีม (Collaboration)</span>
+      </div>
     </div>
   </section>
 
