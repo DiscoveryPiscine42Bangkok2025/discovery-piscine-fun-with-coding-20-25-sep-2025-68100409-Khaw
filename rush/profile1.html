@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - พิชญาภัค ทองวิเศษ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding-top: 70px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .btn-exit {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #dc3545;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn-exit:hover {
+      background-color: #b52a3b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div>My Resume</div>
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile -->
+  <section id="profile">
+    <img src="https://img2.imgbiz.com/imgbiz/IMG_6591.jpg" alt="Profile Picture" class="profile-pic">
+    <h2>นางสาวพิชญาภัค ทองวิเศษ</h2>
+    <p>นักศึกษา | ผู้ที่สนใจด้านวิทยาศาสตร์และนวัตกรรม</p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>ประสบการณ์</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>เข้าร่วมนำเสนอโครงงานวิทยาศาสตร์ สาขาเคมี</li>
+      <li>เข้าร่วมการแข่งขันแนวคิดนวัตกรรม Chang Innovation Awards</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skill">
+    <h2>ทักษะ (Skills)</h2>
+    <div class="skills">
+      <span>เล่นกลอง (Play the Drums)</span>
+      <span>การทำงานเป็นทีม (Collaboration)</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>ติดต่อ</h2>
+    <p>Email: <a href="mailto:681000409@kmitl.ac.th">681000409@kmitl.ac.th</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/13clairdelune__" target="_blank">belleeebell.s</a></p>
+
+    <a href="index.html" class="btn-exit">Exit</a>
+  </section>
+
+</body>
+</html>
