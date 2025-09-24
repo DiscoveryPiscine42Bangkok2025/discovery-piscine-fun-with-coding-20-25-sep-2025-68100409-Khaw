@@ -5,139 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>เลือกดูข้อมูลบุคคล</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
-      font-family: 'Kanit', sans-serif;
-      background: linear-gradient(135deg, #ffd1dc 0%, #b6e0fe 100%);
-      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 50px 20px;
-      color: #444;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      color: #d81e5b;
-      text-shadow: 1px 1px 3px rgba(216, 30, 91, 0.5);
-    }
-
-    p.subtitle {
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 40px;
-    }
-
-    .cards-container {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
       justify-content: center;
-      max-width: 900px;
-      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
     }
-
-    .card {
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(216, 30, 91, 0.2);
-      padding: 30px 25px;
-      flex: 1 1 300px;
-      max-width: 320px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      position: relative;
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
     }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(216, 30, 91, 0.4);
+    .button-container {
+      display: flex;
+      gap: 20px;
     }
-
-    .card img.icon {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 20px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #d81e5b;
-      background-color: #ffe6f0;
-    }
-
-    .card h2 {
-      font-size: 1.8rem;
-      color: #d81e5b;
-      margin-bottom: 10px;
-    }
-
-    .card p.description {
-      font-size: 1rem;
-      color: #777;
-      margin-bottom: 20px;
-      min-height: 70px;
-    }
-
-    .card a.button-link {
-      display: inline-block;
-      padding: 10px 28px;
-      background-color: #d81e5b;
-      color: white;
-      font-weight: 600;
-      border-radius: 30px;
+    a.button {
+      padding: 15px 30px;
       text-decoration: none;
-      font-size: 1.1rem;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
       transition: background-color 0.3s ease;
     }
-
-    .card a.button-link:hover {
-      background-color: #b3174c;
-    }
-
-    @media (max-width: 700px) {
-      .cards-container {
-        flex-direction: column;
-        gap: 30px;
-      }
+    a.button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>เลือกดูข้อมูลของแต่ละคน 💖</h1>
-  <p class="subtitle">คลิกที่ปุ่มด้านล่างเพื่อดูประวัติและข้อมูลของแต่ละคน</p>
-
-  <div class="cards-container">
-    <div class="card">
-      <img
-        class="icon"
-        src="https://i.pinimg.com/originals/8c/1d/41/8c1d410b04f0e4a7b0adf13134515e2a.png"
-        alt="Icon คนที่ 1"
-        loading="lazy"
-      />
-      <h2>นางสาวพิชญาภัค ทองวิเศษ</h2>
-      <p class="description">นักศึกษาที่ชื่นชอบวิทยาศาสตร์ เคมี และนวัตกรรม มีประสบการณ์แข่งขันโครงงานและนำเสนอผลงาน</p>
-      <a href="person1.html" class="button-link" aria-label="ไปยังข้อมูลของ พิชญาภัค ทองวิเศษ">ดูโปรไฟล์</a>
-    </div>
-
-    <div class="card">
-      <img
-        class="icon"
-        src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
-        alt="Icon คนที่ 2"
-        loading="lazy"
-      />
-      <h2>นายธนวัฒน์ สมศรี</h2>
-      <p class="description">นักศึกษาวิศวกรรมคอมพิวเตอร์ รักการเขียนโปรแกรมและสร้างสรรค์โครงการใหม่ ๆ</p>
-      <a href="person2.html" class="button-link" aria-label="ไปยังข้อมูลของ ธนวัฒน์ สมศรี">ดูโปรไฟล์</a>
-    </div>
+  <h1>เลือกดูข้อมูลของแต่ละคน</h1>
+  <div class="button-container">
+    <a href="person1.html" class="button">นางสาวพิชญาภัค ทองวิเศษ</a>
+    <a href="person2.html" class="button">นายธนวัฒน์ สมศรี</a>
   </div>
 </body>
 </html>
