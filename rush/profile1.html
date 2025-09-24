@@ -1,177 +1,27 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resume - พิชญาภัค ทองวิเศษ</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding-top: 70px;
-      background-color: #f9f9f9;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #222;
-      color: #fff;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 999;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    section {
-      padding: 60px 20px;
-    }
-
-    section:nth-child(even) {
-      background-color: #ececec;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    /* Profile Section */
-    #profile {
-      text-align: center;
-    }
-
-    /* Two-column layout for experience & skill */
-    .two-column {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      text-align: left;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .column {
-      flex: 1;
-      min-width: 300px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .skills span {
-      background-color: #007bff;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    .btn-exit {
-      margin-top: 30px;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #dc3545;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .btn-exit:hover {
-      background-color: #b52a3b;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>ข้อมูลของฉัน - พิชญาภัค ทองวิเศษ</title>
 </head>
 <body>
+  <h1>ข้อมูลส่วนตัว</h1>
+  <p><strong>ชื่อ:</strong> นางสาวพิชญาภัค ทองวิเศษ</p>
+  <p><strong>อีเมล:</strong> <a href="mailto:681000409@kmitl.ac.th">681000409@kmitl.ac.th</a></p>
+  <p><strong>Instagram:</strong> <a href="https://www.instagram.com/13clairdelune__" target="_blank">belleeebell.s</a></p>
 
-  <!-- Navbar -->
-  <nav>
-    <div><strong>My Resume</strong></div>
-    <ul>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skill">Skill</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <h2>ประสบการณ์</h2>
+  <ul>
+    <li>เข้าร่วมนำเสนอโครงงานวิทยาศาสตร์ สาขาเคมี</li>
+    <li>เข้าร่วมการแข่งขันแนวคิดนวัตกรรม Chang Innovation Awards</li>
+  </ul>
 
-  <!-- Profile -->
-  <section id="profile">
-    <h2>นางสาวพิชญาภัค ทองวิเศษ</h2>
-    <p>นักศึกษา | ผู้ที่สนใจด้านวิทยาศาสตร์และนวัตกรรม</p>
-  </section>
+  <h2>ทักษะ (Skills)</h2>
+  <ul>
+    <li>เล่นกลอง (Play the Drums)</li>
+    <li>การทำงานเป็นทีม (Collaboration)</li>
+  </ul>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2 class="text-center">ประสบการณ์</h2>
-    <div class="two-column">
-      <div class="column">
-        <ul>
-          <li>เข้าร่วมนำเสนอโครงงานวิทยาศาสตร์ สาขาเคมี</li>
-          <li>เข้าร่วมการแข่งขันแนวคิดนวัตกรรม Chang Innovation Awards</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skill">
-    <h2 class="text-center">ทักษะ (Skills)</h2>
-    <div class="two-column">
-      <div class="column skills">
-        <span>เล่นกลอง (Play the Drums)</span>
-        <span>การทำงานเป็นทีม (Collaboration)</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>ติดต่อ</h2>
-    <p>Email: <a href="mailto:681000409@kmitl.ac.th">681000409@kmitl.ac.th</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/13clairdelune__" target="_blank">belleeebell.s</a></p>
-
-    <a href="index.html" class="btn-exit">Exit</a>
-  </section>
-
+  <p><a href="index.html">กลับหน้าหลัก (Exit)</a></p>
 </body>
 </html>
